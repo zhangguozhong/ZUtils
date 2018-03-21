@@ -1,6 +1,9 @@
 # ZUtils
 
+封装好的一些常用的Category工具类，用于NSArray、NSDictionary、NSString以及NSData对象之间的转化。
+```objective-c
 pod 'ZUtils'
+```
 
 ## 方法
 
