@@ -1,0 +1,13 @@
+source 'https://gitee.com/zhangguozhong/BugSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform:ios,'8.0'
+
+
+target 'TopController' do
+
+pod 'ZTopViewController'
+pod 'AFNetworking'
+pod 'ZDispatchTimerButton'
+
+end
