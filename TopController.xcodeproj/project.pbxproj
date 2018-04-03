@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770DAFE22073B6F500F0EAAB /* DeviceInfos.m in Sources */ = {isa = PBXBuildFile; fileRef = 770DAFE12073B6F500F0EAAB /* DeviceInfos.m */; };
+		77645C542065547300AB9E6D /* NSDictionary+NilSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 77645C532065547300AB9E6D /* NSDictionary+NilSafe.m */; };
+		777483C0206A905B008B11FA /* GYHttpMock.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 777483A2206A905B008B11FA /* GYHttpMock.podspec */; };
+		777483C1206A905B008B11FA /* GYMockResponseDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483A4206A905B008B11FA /* GYMockResponseDSL.m */; };
+		777483C2206A905B008B11FA /* GYMockResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483A5206A905B008B11FA /* GYMockResponse.m */; };
+		777483C3206A905B008B11FA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 777483A8206A905B008B11FA /* LICENSE */; };
+		777483C4206A905B008B11FA /* GYHttpMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483AA206A905B008B11FA /* GYHttpMock.m */; };
+		777483C5206A905B008B11FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 777483AB206A905B008B11FA /* README.md */; };
+		777483C6206A905B008B11FA /* GYMockURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483AC206A905B008B11FA /* GYMockURLProtocol.m */; };
+		777483C7206A905B008B11FA /* GYNSURLSessionHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483AE206A905B008B11FA /* GYNSURLSessionHook.m */; };
+		777483C8206A905B008B11FA /* GYNSURLConnectionHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483B2206A905B008B11FA /* GYNSURLConnectionHook.m */; };
+		777483C9206A905B008B11FA /* GYHttpClientHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483B3206A905B008B11FA /* GYHttpClientHook.m */; };
+		777483CA206A905B008B11FA /* GYMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483B4206A905B008B11FA /* GYMatcher.m */; };
+		777483CB206A905B008B11FA /* GYMockRequestDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483B6206A905B008B11FA /* GYMockRequestDSL.m */; };
+		777483CC206A905B008B11FA /* GYMockRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483B7206A905B008B11FA /* GYMockRequest.m */; };
+		777483CD206A905B008B11FA /* NSURLRequest+GYURLRequestProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483BD206A905B008B11FA /* NSURLRequest+GYURLRequestProtocol.m */; };
+		777483CE206A905B008B11FA /* NSString+mock.m in Sources */ = {isa = PBXBuildFile; fileRef = 777483BE206A905B008B11FA /* NSString+mock.m */; };
+		77D860682067CCA6005589EE /* ZFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D860672067CCA6005589EE /* ZFullViewController.m */; };
+		77D8606B2067D17D005589EE /* ZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D8606A2067D17D005589EE /* ZNavigationController.m */; };
 		7D488C236D55E34456BA82F6 /* libPods-TopController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D7EF501B2BE00B6EA5CE60 /* libPods-TopController.a */; };
 		CE800736201AFA01000088CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE800735201AFA01000088CC /* AppDelegate.m */; };
 		CE800739201AFA01000088CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE800738201AFA01000088CC /* ViewController.m */; };
@@ -20,6 +39,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		770DAFE02073B6F500F0EAAB /* DeviceInfos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfos.h; sourceTree = "<group>"; };
+		770DAFE12073B6F500F0EAAB /* DeviceInfos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfos.m; sourceTree = "<group>"; };
+		77645C522065547300AB9E6D /* NSDictionary+NilSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NilSafe.h"; sourceTree = "<group>"; };
+		77645C532065547300AB9E6D /* NSDictionary+NilSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NilSafe.m"; sourceTree = "<group>"; };
+		777483A1206A905B008B11FA /* GYMockURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMockURLProtocol.h; sourceTree = "<group>"; };
+		777483A2206A905B008B11FA /* GYHttpMock.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GYHttpMock.podspec; sourceTree = "<group>"; };
+		777483A4206A905B008B11FA /* GYMockResponseDSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMockResponseDSL.m; sourceTree = "<group>"; };
+		777483A5206A905B008B11FA /* GYMockResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMockResponse.m; sourceTree = "<group>"; };
+		777483A6206A905B008B11FA /* GYMockResponseDSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMockResponseDSL.h; sourceTree = "<group>"; };
+		777483A7206A905B008B11FA /* GYMockResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMockResponse.h; sourceTree = "<group>"; };
+		777483A8206A905B008B11FA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		777483A9206A905B008B11FA /* GYMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMatcher.h; sourceTree = "<group>"; };
+		777483AA206A905B008B11FA /* GYHttpMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYHttpMock.m; sourceTree = "<group>"; };
+		777483AB206A905B008B11FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		777483AC206A905B008B11FA /* GYMockURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMockURLProtocol.m; sourceTree = "<group>"; };
+		777483AE206A905B008B11FA /* GYNSURLSessionHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYNSURLSessionHook.m; sourceTree = "<group>"; };
+		777483AF206A905B008B11FA /* GYNSURLConnectionHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYNSURLConnectionHook.h; sourceTree = "<group>"; };
+		777483B0206A905B008B11FA /* GYHttpClientHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYHttpClientHook.h; sourceTree = "<group>"; };
+		777483B1206A905B008B11FA /* GYNSURLSessionHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYNSURLSessionHook.h; sourceTree = "<group>"; };
+		777483B2206A905B008B11FA /* GYNSURLConnectionHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYNSURLConnectionHook.m; sourceTree = "<group>"; };
+		777483B3206A905B008B11FA /* GYHttpClientHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYHttpClientHook.m; sourceTree = "<group>"; };
+		777483B4206A905B008B11FA /* GYMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMatcher.m; sourceTree = "<group>"; };
+		777483B6206A905B008B11FA /* GYMockRequestDSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMockRequestDSL.m; sourceTree = "<group>"; };
+		777483B7206A905B008B11FA /* GYMockRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMockRequest.m; sourceTree = "<group>"; };
+		777483B8206A905B008B11FA /* GYMockRequestDSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMockRequestDSL.h; sourceTree = "<group>"; };
+		777483B9206A905B008B11FA /* GYMockRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMockRequest.h; sourceTree = "<group>"; };
+		777483BA206A905B008B11FA /* GYHttpMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYHttpMock.h; sourceTree = "<group>"; };
+		777483BC206A905B008B11FA /* NSString+mock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+mock.h"; sourceTree = "<group>"; };
+		777483BD206A905B008B11FA /* NSURLRequest+GYURLRequestProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+GYURLRequestProtocol.m"; sourceTree = "<group>"; };
+		777483BE206A905B008B11FA /* NSString+mock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+mock.m"; sourceTree = "<group>"; };
+		777483BF206A905B008B11FA /* NSURLRequest+GYURLRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+GYURLRequestProtocol.h"; sourceTree = "<group>"; };
+		77D860662067CCA6005589EE /* ZFullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFullViewController.h; sourceTree = "<group>"; };
+		77D860672067CCA6005589EE /* ZFullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFullViewController.m; sourceTree = "<group>"; };
+		77D860692067D17D005589EE /* ZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZNavigationController.h; sourceTree = "<group>"; };
+		77D8606A2067D17D005589EE /* ZNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZNavigationController.m; sourceTree = "<group>"; };
 		B108BD2D558DFE4FE00AFFAE /* Pods-TopController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopController/Pods-TopController.debug.xcconfig"; sourceTree = "<group>"; };
 		CE661A01CEE353B247A5BF22 /* Pods-TopController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopController.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopController/Pods-TopController.release.xcconfig"; sourceTree = "<group>"; };
 		CE800731201AFA00000088CC /* TopController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +116,72 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		777483A0206A905B008B11FA /* GYHttpMock-master */ = {
+			isa = PBXGroup;
+			children = (
+				777483A1206A905B008B11FA /* GYMockURLProtocol.h */,
+				777483A2206A905B008B11FA /* GYHttpMock.podspec */,
+				777483A3206A905B008B11FA /* Response */,
+				777483A8206A905B008B11FA /* LICENSE */,
+				777483A9206A905B008B11FA /* GYMatcher.h */,
+				777483AA206A905B008B11FA /* GYHttpMock.m */,
+				777483AB206A905B008B11FA /* README.md */,
+				777483AC206A905B008B11FA /* GYMockURLProtocol.m */,
+				777483AD206A905B008B11FA /* Hooks */,
+				777483B4206A905B008B11FA /* GYMatcher.m */,
+				777483B5206A905B008B11FA /* Request */,
+				777483BA206A905B008B11FA /* GYHttpMock.h */,
+				777483BB206A905B008B11FA /* Categories */,
+			);
+			path = "GYHttpMock-master";
+			sourceTree = "<group>";
+		};
+		777483A3206A905B008B11FA /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				777483A4206A905B008B11FA /* GYMockResponseDSL.m */,
+				777483A5206A905B008B11FA /* GYMockResponse.m */,
+				777483A6206A905B008B11FA /* GYMockResponseDSL.h */,
+				777483A7206A905B008B11FA /* GYMockResponse.h */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		777483AD206A905B008B11FA /* Hooks */ = {
+			isa = PBXGroup;
+			children = (
+				777483AE206A905B008B11FA /* GYNSURLSessionHook.m */,
+				777483AF206A905B008B11FA /* GYNSURLConnectionHook.h */,
+				777483B0206A905B008B11FA /* GYHttpClientHook.h */,
+				777483B1206A905B008B11FA /* GYNSURLSessionHook.h */,
+				777483B2206A905B008B11FA /* GYNSURLConnectionHook.m */,
+				777483B3206A905B008B11FA /* GYHttpClientHook.m */,
+			);
+			path = Hooks;
+			sourceTree = "<group>";
+		};
+		777483B5206A905B008B11FA /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				777483B6206A905B008B11FA /* GYMockRequestDSL.m */,
+				777483B7206A905B008B11FA /* GYMockRequest.m */,
+				777483B8206A905B008B11FA /* GYMockRequestDSL.h */,
+				777483B9206A905B008B11FA /* GYMockRequest.h */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		777483BB206A905B008B11FA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				777483BC206A905B008B11FA /* NSString+mock.h */,
+				777483BD206A905B008B11FA /* NSURLRequest+GYURLRequestProtocol.m */,
+				777483BE206A905B008B11FA /* NSString+mock.m */,
+				777483BF206A905B008B11FA /* NSURLRequest+GYURLRequestProtocol.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		8CF3F71D0558428AB12752C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,11 +211,16 @@
 		CE800733201AFA00000088CC /* TopController */ = {
 			isa = PBXGroup;
 			children = (
+				777483A0206A905B008B11FA /* GYHttpMock-master */,
 				CEE66BB42062004600CC761C /* ZUtils */,
 				CE800734201AFA00000088CC /* AppDelegate.h */,
 				CE800735201AFA01000088CC /* AppDelegate.m */,
 				CE800737201AFA01000088CC /* ViewController.h */,
 				CE800738201AFA01000088CC /* ViewController.m */,
+				77D860662067CCA6005589EE /* ZFullViewController.h */,
+				77D860672067CCA6005589EE /* ZFullViewController.m */,
+				77D860692067D17D005589EE /* ZNavigationController.h */,
+				77D8606A2067D17D005589EE /* ZNavigationController.m */,
 				CE80073A201AFA01000088CC /* Main.storyboard */,
 				CE80073D201AFA01000088CC /* Assets.xcassets */,
 				CE80073F201AFA01000088CC /* LaunchScreen.storyboard */,
@@ -108,12 +233,16 @@
 		CEE66BB42062004600CC761C /* ZUtils */ = {
 			isa = PBXGroup;
 			children = (
+				770DAFE02073B6F500F0EAAB /* DeviceInfos.h */,
+				770DAFE12073B6F500F0EAAB /* DeviceInfos.m */,
 				CEE66BB52062007E00CC761C /* NSArray+ConvertToJson.h */,
 				CEE66BB62062007E00CC761C /* NSArray+ConvertToJson.m */,
 				CEE66BB82062057B00CC761C /* NSDictionary+ConvertToString.h */,
 				CEE66BB92062057B00CC761C /* NSDictionary+ConvertToString.m */,
 				CEE66BBB206208E300CC761C /* NSString+ConvertToJson.h */,
 				CEE66BBC206208E300CC761C /* NSString+ConvertToJson.m */,
+				77645C522065547300AB9E6D /* NSDictionary+NilSafe.h */,
+				77645C532065547300AB9E6D /* NSDictionary+NilSafe.m */,
 			);
 			path = ZUtils;
 			sourceTree = "<group>";
@@ -179,9 +308,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777483C5206A905B008B11FA /* README.md in Resources */,
+				777483C0206A905B008B11FA /* GYHttpMock.podspec in Resources */,
 				CE800741201AFA01000088CC /* LaunchScreen.storyboard in Resources */,
 				CE80073E201AFA01000088CC /* Assets.xcassets in Resources */,
 				CE80073C201AFA01000088CC /* Main.storyboard in Resources */,
+				777483C3206A905B008B11FA /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,12 +375,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777483CD206A905B008B11FA /* NSURLRequest+GYURLRequestProtocol.m in Sources */,
+				777483C1206A905B008B11FA /* GYMockResponseDSL.m in Sources */,
+				777483CB206A905B008B11FA /* GYMockRequestDSL.m in Sources */,
+				777483CC206A905B008B11FA /* GYMockRequest.m in Sources */,
 				CEE66BBD206208E300CC761C /* NSString+ConvertToJson.m in Sources */,
+				777483C8206A905B008B11FA /* GYNSURLConnectionHook.m in Sources */,
+				770DAFE22073B6F500F0EAAB /* DeviceInfos.m in Sources */,
+				77D8606B2067D17D005589EE /* ZNavigationController.m in Sources */,
+				77645C542065547300AB9E6D /* NSDictionary+NilSafe.m in Sources */,
 				CE800739201AFA01000088CC /* ViewController.m in Sources */,
+				777483C4206A905B008B11FA /* GYHttpMock.m in Sources */,
+				777483C6206A905B008B11FA /* GYMockURLProtocol.m in Sources */,
 				CEE66BB72062007E00CC761C /* NSArray+ConvertToJson.m in Sources */,
+				77D860682067CCA6005589EE /* ZFullViewController.m in Sources */,
+				777483CA206A905B008B11FA /* GYMatcher.m in Sources */,
 				CEE66BBA2062057B00CC761C /* NSDictionary+ConvertToString.m in Sources */,
+				777483C7206A905B008B11FA /* GYNSURLSessionHook.m in Sources */,
 				CE800744201AFA01000088CC /* main.m in Sources */,
+				777483C9206A905B008B11FA /* GYHttpClientHook.m in Sources */,
 				CE800736201AFA01000088CC /* AppDelegate.m in Sources */,
+				777483CE206A905B008B11FA /* NSString+mock.m in Sources */,
+				777483C2206A905B008B11FA /* GYMockResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
