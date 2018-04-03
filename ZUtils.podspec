@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZUtils"
-  s.version      = "1.0.0"
-  s.summary      = "封装一些常用的Category工具类库."
+  s.version      = "1.0.1"
+  s.summary      = "封装一些比较常用的工具类库."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  封装一些常用的Category工具类库，便于在开发过程中对象之间的转化。
+  封装一些常用的工具类库，便于在开发过程中复用。
                    DESC
 
   s.homepage     = "https://github.com/zhangguozhong/ZUtils.git"
@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "Foundation"
+  s.frameworks = "Foundation","UIKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"

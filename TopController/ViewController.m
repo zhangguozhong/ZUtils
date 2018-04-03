@@ -11,6 +11,7 @@
 #import "NSArray+ConvertToJson.h"
 #import "NSDictionary+ConvertToString.h"
 #import "ZFullViewController.h"
+#import "DeviceInfos.h"
 
 @interface ViewController (){
     dispatch_queue_t serialQueue;
@@ -32,7 +33,6 @@
                            @"className":@"三年二班"
                            };
     NSLog(@"%@",[dict toQueryString]);
-    
     
     NSDictionary *dict2 = @{
                            @"name":@"",
