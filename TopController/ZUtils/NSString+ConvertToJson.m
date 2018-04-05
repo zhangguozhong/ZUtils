@@ -11,7 +11,6 @@
 @implementation NSString (ConvertToJson)
 
 - (id)toJson {
-    
     NSData *jsonData = [self dataUsingEncoding:NSUTF8StringEncoding];
     if (!jsonData) {
         return nil;
@@ -29,7 +28,6 @@
 }
 
 - (NSData *)stringToData {
-    
     return [self dataUsingEncoding:NSUTF8StringEncoding];
 }
 

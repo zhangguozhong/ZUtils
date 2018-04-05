@@ -11,7 +11,6 @@
 @implementation NSArray (ConvertToJson)
 
 - (NSString *)toJsonString {
-    
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:kNilOptions error:&error];
     
@@ -27,7 +26,6 @@
 }
 
 - (NSData *)toJsonData {
-    
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:kNilOptions error:&error];
     
