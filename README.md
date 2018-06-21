@@ -10,7 +10,6 @@ pod 'ZUtils'
 ### NSArray
 ```objective-c
 - (NSString *)toJsonString {
-    
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:kNilOptions error:&error];
     
@@ -26,7 +25,6 @@ pod 'ZUtils'
 }
 
 - (NSData *)toJsonData {
-    
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:kNilOptions error:&error];
     
@@ -45,7 +43,6 @@ pod 'ZUtils'
 ### NSDictionary
 ```objective-c
 - (NSString *)toJsonString {
-    
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:kNilOptions error:&error];
     
@@ -61,25 +58,30 @@ pod 'ZUtils'
 }
 
 - (NSString *)toQueryString {
-    
-    if (self.count==0) {
+    if (self.count == 0) {
         return nil;
     }
     
-    NSMutableString *queryString = [[NSMutableString alloc] initWithString:@"?"];
-    NSMutableArray *hasKeys = [NSMutableArray array];
-    [self enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull objValue, BOOL * _Nonnull stop) {
+    NSMutableString *queryString = [[NSMutableString alloc] init];
+    [self enumerateKeysAndObjectsUsingBlock:^(NSString *  _Nonnull strKey, id  _Nonnull objValue, BOOL * _Nonnull stop) {
         
-        [hasKeys addObject:key];
-        if (key && objValue) {
+        if (strKey && objValue) {
+            NSString *strObjValue;
             if ([objValue isKindOfClass:[NSArray class]]) {
-                objValue = [objValue toJsonString];
+                strObjValue = [objValue toJsonString];
+            }else{
+                strObjValue = objValue;
             }
-            NSString *queryItem = [NSString stringWithFormat:@"%@=%@",key,objValue];
-            [queryString appendString:queryItem];
-        }
-        if (hasKeys.count != self.count) {
-            [queryString appendString:@"&"];
+            
+            if (strObjValue && strObjValue.length > 0) {
+                if (queryString.length == 0) {
+                    NSString *queryItem = [NSString stringWithFormat:@"?%@=%@",strKey,strObjValue];
+                    [queryString appendString:queryItem];
+                }else{
+                    NSString *queryItem = [NSString stringWithFormat:@"&%@=%@",strKey,strObjValue];
+                    [queryString appendString:queryItem];
+                }
+            }
         }
     }];
     
@@ -90,7 +92,6 @@ pod 'ZUtils'
 ### NSString
 ```objective-c
 - (id)toJson {
-    
     NSData *jsonData = [self dataUsingEncoding:NSUTF8StringEncoding];
     if (!jsonData) {
         return nil;
@@ -108,7 +109,6 @@ pod 'ZUtils'
 }
 
 - (NSData *)stringToData {
-    
     return [self dataUsingEncoding:NSUTF8StringEncoding];
 }
 
