@@ -31,4 +31,24 @@
     return [self dataUsingEncoding:NSUTF8StringEncoding];
 }
 
+- (NSString *)toSortString {
+    if (!self || self.length==0) {
+        return nil;
+    }
+    
+    NSMutableArray *sortItems = [NSMutableArray array];
+    for (int i=0; i<self.length; i++) {
+        NSString *item = [self substringWithRange:NSMakeRange(i, 1)];
+        [sortItems addObject:item];
+    }
+    
+    NSArray *sortAfterItems = [sortItems sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    NSString *sortString = [[sortAfterItems componentsJoinedByString:@","] stringByReplacingOccurrencesOfString:@"," withString:@""];
+    if (sortString && sortString.length != 0) {
+        return sortString;
+    }
+
+    return nil;
+}
+
 @end

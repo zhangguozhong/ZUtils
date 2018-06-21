@@ -15,8 +15,11 @@
 
 @interface ViewController (){
     dispatch_queue_t serialQueue;
+    NSString *globalVal;
 }
 @property (nonatomic, strong) NSString *ssdsg;
+
+@property (nonatomic, strong) NSString *strKey;
 @end
 
 @implementation ViewController
@@ -25,6 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.strKey = [NSString stringWithFormat:@"sdfsdfsdgsdg"];
     self.view.backgroundColor = [UIColor whiteColor];
     NSDictionary *dict = @{
                            @"name":@"zhangsan",
@@ -64,6 +68,25 @@
     NSArray *testA = @[@"1",@"2",@"3"];
     NSLog(@"str -- %@",[testA toJsonString]);
     
+    NSMutableArray *testStr = [NSMutableArray array];
+    static NSString *str = @"zsxvx";
+    globalVal = [NSString stringWithFormat:@"fsdf"];
+    NSLog(@"pre %p,%p",_strKey, &_strKey);
+    void(^testBlock)(void) = ^{
+        
+        //testStr = [NSString stringWithFormat:@"ssdfsfs"];
+        str = @"dfds";
+        globalVal = [NSString stringWithFormat:@"dfsd"];
+        self.strKey = [NSString stringWithFormat:@"sfdfsdsdfsd"];
+        [testStr addObject:@"sfsdf"];
+        NSLog(@"aft %p,%p",_strKey, &_strKey);
+    };
+    
+    testBlock();
+    NSLog(@"aft2 %p,%p",_strKey, &_strKey);
+    NSLog(@"%@",testStr);
+    NSLog(@"%@",self.strKey);
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 100, 200, 40);
     [button setTitle:@"test" forState:UIControlStateNormal];
@@ -76,6 +99,18 @@
 //    [NSThread detachNewThreadSelector:@selector(readAction) toTarget:self withObject:nil];
 //
 //    [NSThread detachNewThreadSelector:@selector(writeAction) toTarget:self withObject:nil];
+    
+    
+    NSArray *initArray = @[@"zhangsan",@"tangs",@"wangfd"];
+    NSArray *newArray = [initArray sortedArrayUsingComparator:^NSComparisonResult(NSString *  _Nonnull obj1, NSString *  _Nonnull obj2) {
+        return obj1 < obj2;
+    }];
+    
+    NSLog(@"%@", newArray);
+    
+    NSString *test = @"dfjdhg54625467.poiiada65765";
+    
+    NSLog(@"sort string == %@",[test toSortString]);
 }
 
 - (void)handleAction{

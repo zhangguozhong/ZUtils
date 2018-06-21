@@ -27,4 +27,12 @@
 - (NSData *)stringToData;
 
 
+/**
+ 返回升序字符串（用于接口验签）
+
+ @return 字符串
+ */
+- (NSString *)toSortString;
+
+
 @end
