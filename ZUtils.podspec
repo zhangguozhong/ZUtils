@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZUtils"
-  s.version      = "1.0.1"
+  s.version      = "1.1.0"
   s.summary      = "封装一些比较常用的工具类库."
 
   # This description is used to generate tags and improve search results.
